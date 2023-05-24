@@ -19,7 +19,7 @@
 
     @include('layouts.partials.header')
 
-    <main class="bg-dark">
+    <main class="">
         @yield('content')
     </main>
 
