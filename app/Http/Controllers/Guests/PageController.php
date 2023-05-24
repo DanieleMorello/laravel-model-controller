@@ -19,6 +19,6 @@ class PageController extends Controller
 
     public function contacs()
     {
-        return view('contacs');
+        return view('contacts');
     }
 }
