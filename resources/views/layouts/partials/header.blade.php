@@ -1,5 +1,5 @@
 <header>
-    <img src="{{ Vite::asset('resources/img/logo.webp') }}" alt="">
+    @include('layouts.partials.logo')
     <nav class="nav justify-content-center mt-5">
 
       <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'bg-primary text-white' : '' }}" href="{{ route('home') }}" aria-current="page">Home</a>
