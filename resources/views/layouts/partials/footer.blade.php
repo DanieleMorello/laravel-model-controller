@@ -4,27 +4,19 @@
         <div class="row">
             <div class="col">
                 @include('layouts.partials.logo')
-                <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nobis esse ipsam quibusdam at cum, accusamus incidunt dolores distinctio nulla sapiente ducimus impedit maxime reiciendis veritatis perferendis ea atque obcaecati.
-                </p>
+
             </div>
             <div class="col">
                 <h3>Quick links</h3>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#">
-                            Home
-                        </a>
+                        <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'text-white' : '' }}" href="{{ route('home') }}" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#">
-                            Film
-                        </a>
+                        <a class="nav-link {{ Route::currentRouteName() === 'movies' ? 'bg-primary text-white' : '' }}" href="{{ route('movies') }}">Film</a>
                     </li>
                     <li>
-                        <a href="#">
-                            Contattaci
-                        </a>
+                       <a class="nav-link {{ Route::currentRouteName() === 'contacts' ? 'text-white' : '' }}" href="{{ route('contacts') }}">Contattaci</a>
                     </li>
 
                 </ul>
@@ -45,6 +37,10 @@
 
                 </ul>
             </div>
+            <p class="lead p-5">
+                    Copyright &copy; 2023 Daniele Morello classe 91 Boolean, all rights reserved.
+
+                </p>
         </div>
     </div>
 

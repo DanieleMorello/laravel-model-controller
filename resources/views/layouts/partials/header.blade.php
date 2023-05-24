@@ -1,4 +1,4 @@
-<header>
+<header class="text-center bg-dark py-3">
     @include('layouts.partials.logo')
     <nav class="nav justify-content-center mt-5">
 
