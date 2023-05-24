@@ -13,7 +13,7 @@
                         <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'text-white' : '' }}" href="{{ route('home') }}" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a class="nav-link {{ Route::currentRouteName() === 'movies' ? 'bg-primary text-white' : '' }}" href="{{ route('movies') }}">Film</a>
+                        <a class="nav-link {{ Route::currentRouteName() === 'movies' ? 'text-white' : '' }}" href="{{ route('movies') }}">Film</a>
                     </li>
                     <li>
                        <a class="nav-link {{ Route::currentRouteName() === 'contacts' ? 'text-white' : '' }}" href="{{ route('contacts') }}">Contattaci</a>
